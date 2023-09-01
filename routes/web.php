@@ -20,10 +20,10 @@ Route::get('/', function () {
 });
 
 
-// Route::resource('category', categoryController::class, ['except' => [
-//     'create', 'update','show'
-// ]]);
-
-Route::resource('category', categoryController::class, [ [
+Route::resource('category', categoryController::class, ['except' => [
     'create', 'update','show'
 ]]);
+
+// Route::resource('category', categoryController::class, [ [
+//     'create', 'update','show'
+// ]]);
